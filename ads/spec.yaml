@@ -1,3 +1,11 @@
 name: hello-ads
 version: v1
 runtime: ADS
+src: ./zero
+entrypoint: handler
+replicas: 1
+poolsize: 1
+inputs:
+   msg: str
+output:
+   out: str
